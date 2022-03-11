@@ -1,0 +1,90 @@
+<section class="u-clearfix u-section-4" id="sec-6398">
+    <div class="">
+      <h1 class="u-align-center u-text u-text-palette-5-dark-1 u-text-1">Make Payment</h1>
+      <p class="u-align-center u-text u-text-2" style="font-weight: 500; color: rgb(91, 91, 91);">
+        Pay online with your debit or credit card and going to the bank to deposit of coming to our office to make payment. Hence we ensure you can pay anywhere, anytime.
+        Ensure that the details below are filled correctly. Once payment is done, A reference code or receipt will be sent to your email. The reference code or receipt will serve as a proof of payment. Thank you     
+     </p>
+     
+      
+    <div class="container">
+
+        <form class="text-center p-5">
+
+            <div class="form-row mb-4">
+                <div class="col">
+                    <small id="defaultRegisterFormPhoneHelpBlock" class="text-left form-text text-muted">
+                        First Name*
+                    </small>
+                    <input type="text" name="first_name" [(ngModel)]="first_name" id="defaultRegisterFormFirstName" class="shadow form-control" placeholder="Enter First name">
+                </div>
+                <div class="col">
+                    <small id="defaultRegisterFormPhoneHelpBlock" class="text-left form-text text-muted">
+                    Last Name*
+                    </small>
+                    <input type="text" id="defaultRegisterFormLastName" name="last_name" [(ngModel)]="last_name" class="shadow form-control" placeholder="Enter Last name">
+                </div>
+            </div>
+    
+            <div class="form-row mb-4">
+                <div class="col">
+                    <small id="defaultRegisterFormPhoneHelpBlock" class="text-left form-text text-muted">
+                        Email Address*
+                    </small>
+                    <input type="email" id="defaultRegisterFormEmail" name="email" [(ngModel)]="email" class="shadow form-control mb-4" placeholder="Enter your e-mail address">
+                </div>
+                <div class="col">
+                    <small id="defaultRegisterFormPhoneHelpBlock" class="text-left form-text text-muted">
+                        Phone Number*
+                    </small>
+                    <input type="text" id="defaultRegisterFormPhone" name="phone" [(ngModel)]="phone" class="shadow form-control mb-4" placeholder="Enter Phone Here">
+                </div>
+            </div>
+
+            <small id="defaultRegisterFormPhoneHelpBlock" class="text-left form-text text-muted">
+                Payment for*
+            </small>
+            <select name="payment_for" [(ngModel)]="payment_for" class="shadow browser-default custom-select mb-4">
+              <option value="" disabled>Choose option</option>
+              <option value="Parcel Delivery" selected>Parcel/Cargo/Mail Delivery</option>
+              <option value="Haulage">Haulage</option>
+              <option value="Ware Housing">Ware Housing</option>
+              <option value="Freight Clearing">Freight Clearing</option>
+              <option value="Logistics Syndication">Logistics Syndication</option>
+            </select>
+    
+            <small id="defaultRegisterFormPhoneHelpBlock" class="text-left form-text text-muted">
+                Amount* (Amount lesser than #200 cannot be paid online)
+            </small>
+            <input type="number" maxlength="6" (ngModelChange)="changeAmount(amount)" name="amount" [(ngModel)]="amount" id="defaultRegisterPhonePassword" class="shadow form-control" placeholder="Amount" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+            
+    
+            <div style="height: 40px;">&nbsp;</div>
+            <div class="row">
+                <div class="col-md-6 mx-auto d-flex justify-content-center">
+                    <mdb-checkbox [default]="true">Accept terms of service and payment policy</mdb-checkbox>
+                </div>
+            </div>
+    
+            <button 
+            angular4-paystack
+            [disabled]="!first_name || !last_name || !email || !phone || !amount || 200 > amount || !payment_for || amount > 1000000"
+            [key]="'pk_test_ee3f4927da5afd3335531127d78110f707f04426'"
+            [email]="email"
+            [amount]="amount * 100"
+            [ref]="reference"
+            (paymentInit)="paymentInit()"
+            (close)="paymentCancel()"
+            (callback)="paymentDone($event)"
+            mdbBtn 
+            block="true" 
+            class="my-4 pay_btn shadow" 
+            type="submit">
+                Pay <span *ngIf="amount > 0">N</span>{{amount | number}} Online
+            </button>
+    
+        </form>
+
+    </div>
+    </div>
+  </section>

@@ -1,0 +1,268 @@
+<header class="u-clearfix u-header u-header" id="sec-638c"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+    <a routerLink="/" class="u-image u-logo u-image-1">
+      <img src="../../../assets/images/logo.png" style="float: left;" class="u-logo-image u-logo-image-1"><h1 class="title u-text-palette-2-base">STREETWISE <br>DELIVERY</h1>
+      <!-- <div style="font-family: 'brush script mt' !important;" class="sub-title">Delivery</div> -->
+    </a>
+    <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="XL">
+
+      <div class="for_mobile menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;">
+        <a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="#">
+          <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+        </symbol>
+        </defs></svg></a>
+      </div>
+
+      <div class="for_desktop u-custom-menu u-nav-container">
+        <ul class="u-nav u-unstyled u-nav-1" style="background-color: #193eb8 !important; color: white !important;">
+          <li class="u-nav-item" routerLinkActive="active_link">
+            <a class="u-border-2 u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-grey-90 u-text-hover-grey-90" routerLink="/home" style="padding: 10px 0px;">Home</a>
+          </li>
+          <li class="u-nav-item" routerLinkActive="active_link">
+            <a class="u-border-2 u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-grey-90 u-text-hover-grey-90" routerLink="/about" style="padding: 10px 0px;">About Us</a>
+          </li>
+          <li class="u-nav-item" routerLinkActive="active_link">
+            <a class="u-border-2 u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-grey-90 u-text-hover-grey-90" routerLink="/faq" style="padding: 10px 0px;">F.A.Q</a>
+          </li>
+          <li class="u-nav-item" routerLinkActive="active_link">
+            <a class="u-border-2 u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-grey-90 u-text-hover-grey-90" routerLink="/contact" style="padding: 10px 0px;">Contact Us</a>
+          </li>
+          <li class="u-nav-item" routerLinkActive="active_link">
+            <a class="u-border-2 u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-grey-90 u-text-hover-grey-90" routerLink="/quote" style="padding: 10px 0px;">Get A Quote</a>
+          </li>
+          <li class="u-nav-item" routerLinkActive="active_link">
+            <a class="u-border-2 u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-grey-90 u-text-hover-grey-90" routerLink="/pay" style="padding: 10px 0px;">Pay Online</a>
+          </li>
+          <li class="u-nav-item" style="margin-left: 0.5rem">
+            <a type="button" (click)="basicModal.show()" style="padding-left: 10px !important; padding-right: 10px !important; color: black !important;" class="u-btn u-button-style u-palette-3-base u-btn-1 shadow">Send Parcel</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="for_mobile u-custom-menu u-nav-container-collapse">
+        <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+          <div class="u-sidenav-overflow">
+            <div class="u-menu-close" id="close_btn"></div>
+            <ul class="u-align-left u-nav u-popupmenu-items u-unstyled u-nav-2">
+              <li class="u-nav-item" (click)="closeBtn()" routerLinkActive="active_link"><a class="u-button-style u-nav-link" routerLink="/home" style="padding: 10px 20px;">Home</a></li>
+              <li class="u-nav-item" (click)="closeBtn()" routerLinkActive="active_link"><a class="u-button-style u-nav-link" routerLink="/about" style="padding: 10px 20px;">About Us</a></li>
+              <!-- <li class="u-nav-item" routerLinkActive="active_link"><a class="u-button-style u-nav-link" routerLink="/quote" style="padding: 10px 20px;">Get A Quote</a></li> -->
+              <li class="u-nav-item" (click)="closeBtn()" routerLinkActive="active_link"><a class="u-button-style u-nav-link" routerLink="/faq" style="padding: 10px 20px;">F. A. Qs</a></li>
+              <li class="u-nav-item" (click)="closeBtn()" routerLinkActive="active_link"><a class="u-button-style u-nav-link" routerLink="/contact" style="padding: 10px 20px;">Contact Us</a></li>
+              <li class="u-nav-item" (click)="closeBtn()" routerLinkActive="active_link"><a class="u-button-style u-nav-link" routerLink="/pay" style="padding: 10px 20px;">Pay Online</a></li>
+              <li class="u-nav-item" (click)="closeBtn()" routerLinkActive="active_link"><a class="u-button-style u-nav-link" routerLink="/quote" style="padding: 10px 20px;">Get A Quote</a></li>
+
+              <li class="u-nav-item" (click)="closeBtn()" routerLinkActive="active_link"><a class="u-button-style u-nav-link"> &nbsp; </a> </li>
+              <a class="u-btn u-button-style u-palette-3-base u-btn-1" (click)="basicModal.show()">Send Parcel</a>
+            </ul>
+          </div>
+        </div> 
+        <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+      </div>
+
+    </nav> 
+  </div></header> 
+
+
+  <div mdbModal #basicModal="mdbModal" style="overflow: auto" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header" style="position: relative !important; height: 60px;">
+          <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal.hide()">
+            <span style="font-size: 40px; margin-top: 0px !important;" aria-hidden="true">×</span>
+          </button>
+          <h4 style="margin-top: 0px !important;" class="modal-title" id="myModalLabel">Send A Parcel</h4>
+        </div>
+        <div class="modal-body" style="overflow-y: scroll !important;">
+          <form class="text-center">
+
+            <div class="card shadow" style="margin-bottom: 1.2rem !important;">
+              <div class="u-align-left u-text u-text-2" style="font-size: 14px !important;">
+                <!-- <span style="font-weight: 700;">Hi User,</span>
+                 Kindly note that items heavier than 20kg or items that won't fit in to the courier delivery box won't be dispatched by the rider. Hence, you will need to bring the item to our office and we will get it delivered through other means. 
+                 Also, <span style="font-weight: 700;">Ensure all fields are filled correctly and accurately</span> -->
+                 Hi Streetwise Delivery! Find my order below. 
+              </div>
+            </div>  
+
+            <div #map_canvas id="map_canvas"></div>
+
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <label>Pickup Location *</label>
+                <input autocomplete="false" type="text" class="form-control mb-4 shadow_0" id="input" name="pickuplocation" [(ngModel)]="pickupcomplete.input" (ngModelChange)="pickupSearchResults(pickupcomplete.input)"
+                placeholder="Enter Pickup location" style="border-bottom: 1px solid #8a8a8a;">
+                <div class="bg-white container" *ngIf="pickupautocompleteItems?.length > 0">
+                  <div class="options text-left shadow_0" *ngFor="let location of pickupautocompleteItems" (click)="selectPickupLocation(location)">{{location?.description}}</div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <label>Delivery Location *</label>
+                <input autocomplete="false" type="text" class="form-control mb-4 shadow_0" id="input" name="droplocation" [(ngModel)]="dropcomplete.input" (ngModelChange)="dropSearchResults(dropcomplete.input)"
+                  placeholder="Enter Drop location" style="border-bottom: 1px solid #8a8a8a;">
+                <div class="bg-white container" *ngIf="dropautocompleteItems?.length > 0">
+                  <div class="options text-left shadow_0" *ngFor="let location of dropautocompleteItems" (click)="selectDropLocation(location)">{{location?.description}}</div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-lg-4 col-md-6 scol-sm-12">
+                <label style="top: -3px !important;">Email *</label>
+                <input autocomplete="false" type="text" class="form-control mb-4 shadow_0" id="input" name="email " [(ngModel)]="email"
+                  placeholder="Enter Your Email" style="border-bottom: 1px solid #8a8a8a;">
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <label>Phone number*</label>
+                <input autocomplete="false" type="text" class="form-control mb-4 shadow_0" id="input" name="phone" [(ngModel)]="phone"
+                placeholder="Enter Phone Number" style="border-bottom: 1px solid #8a8a8a;">
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <label>Delivery date*</label>
+                <input autocomplete="false" type="date" class="form-control mb-4 shadow_0" id="date_of_delivery" name="date_of_delivery" [(ngModel)]="date_of_delivery"
+                placeholder="Enter Phone Number" style="border-bottom: 1px solid #8a8a8a;">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <label>First Name of Sender*</label>
+                <input autocomplete="false" type="text" class="form-control mb-4 shadow_0" id="firstname" name="firstname" [(ngModel)]="firstname"
+                placeholder="Enter First Name" style="border-bottom: 1px solid #8a8a8a;">
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <label>Last Name of Sender*</label>
+                <input autocomplete="false" type="text" class="form-control mb-4 shadow_0" id="lastname" name="lastname" [(ngModel)]="lastname"
+                placeholder="Enter Last Name" style="border-bottom: 1px solid #8a8a8a;">
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <label>Height(Inches)</label>
+                <input autocomplete="false" type="number" class="form-control mb-4 shadow_0" id="height" name="height" [(ngModel)]="height"
+                placeholder="20" style="border-bottom: 1px solid #8a8a8a;">
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <label>Width</label>
+                <input autocomplete="false" type="number" class="form-control mb-4 shadow_0" id="width" name="width" [(ngModel)]="width"
+                placeholder="15" style="border-bottom: 1px solid #8a8a8a;">
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <label>Item Type *</label>
+                <select style="width: 100%; border: 1px solid #8a8a8a; border-radius: 5px;" name="selected_category" id="selected_category" [(ngModel)]="selected_category" class="browser-default custom-select mb-4">
+                  <option disabled selected>Select A Category</option>
+                  <option style="text-transform: capitalize !important;" *ngFor="let cat of categories" [value]="cat?.name">{{cat?.name}}</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <label>Description *</label>
+                <textarea maxlength="100" autocomplete="false" type="number" class="form-control mb-4 shadow_0" id="desc" rows="2" name="desc" [(ngModel)]="desc"
+                placeholder="Description of the package or additional details" style="border-bottom: 1px solid #8a8a8a;"></textarea>
+              </div>
+            </div>
+            <small>(Please note that the item will be reweighed) </small>
+            
+            <button *ngIf="!loading" mdbBtn color="primary" block="true" class="my-2 shadow" type="submit" (click)="continue(user?.uid, email, firstname, lastname, height, width, selected_category, pickupcomplete?.input, dropcomplete?.input, phone, date_of_delivery, desc)">
+                Continue
+            </button>
+
+            <button *ngIf="loading" mdbBtn color="primary" block="true" class="my-2 shadow">
+              <img  src="../../../assets/images/loader.gif" style="height: 40px; margin: auto">
+            </button>
+
+            <div style="height: 20px;">&nbsp;</div>
+            <div>If you have any issues or enquiries, Kindy call <a href="tel:+2348066759838">08066759838</a> or mail <a href="mailto:info@streetwisedelivery.com.ng">info@streetwisedelivery.com.ng</a></div>
+            <div style="height: 20px;">&nbsp;</div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div mdbModal #paymentModal="mdbModal" class="modal fade left" id="frameModalTop" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Delivery Details</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="paymentModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3" style="overflow: scroll !important;">
+        <div class="md-form mb-2">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg>
+          {{firstname}} &nbsp; {{lastname}} 
+        </div>
+
+        <div class="md-form mb-2">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+          </svg>
+          {{email}}
+        </div>
+
+        <div class="md-form mb-2">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg>
+          Pick Up Location:  {{pickupcomplete?.input}} 
+        </div>
+
+        <div class="md-form mb-2">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+          </svg>
+            Drop Location:  {{dropcomplete?.input}}
+        </div>
+
+        <div class="md-form mb-2">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+          </svg> Distance: 
+          {{trip_distance | number}} km
+        </div>
+
+        <div class="md-form mb-2">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-fill" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1H0V4zm0 3v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7H0zm3 2h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1z"/>
+          </svg>
+          Amount to Pay: 
+          N{{amount | number}}
+        </div>
+
+        <div class="md-form mb-2">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
+            <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+            <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+          </svg>
+          Description: 
+          {{desc}}
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button mdbBtn class="pay_btn shadow" class="waves-light" mdbWavesEffect
+        [disabled]="1 > amount || !amount"
+        angular4-paystack
+        [key]="'pk_test_ee3f4927da5afd3335531127d78110f707f04426'"
+        [email]="email"
+        [amount]="amount * 100"
+        [ref]="reference"
+        (paymentInit)="paymentInit()"
+        (close)="paymentCancel()"
+        (callback)="paymentDone($event)">Make Payment</button>
+      </div> 
+    </div>
+  </div>
+</div>

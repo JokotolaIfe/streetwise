@@ -1,0 +1,42 @@
+.cont{
+    max-width: 1000px;
+    margin: auto;
+
+    .pay_btn{
+        color: #ffffff !important;
+        background-color: #193eb8 !important;
+        text-transform: capitalize !important;
+        font-size: 18px !important;
+    }
+
+    input, select{
+        border: none !important;
+    }
+
+    .btn-group{
+        label{
+            text-transform: capitalize !important;
+            // margin-left: 10px;
+            // margin-right: 10px;
+            font-size: 16px;
+            padding:5px 10px !important;
+        }
+    }
+
+    label{
+        margin-left: 0px !important;
+        margin-right: auto !important;
+        display: block !important;
+    }
+
+    .pay_btn_0{
+        margin-right: 0px !important;
+        margin-left: auto !important;
+        color: #ffffff !important;
+        background-color: #193eb8 !important;
+        text-transform: capitalize !important;
+        font-size: 18px !important;
+        width: 100px;
+        display: block  ;
+    }
+}

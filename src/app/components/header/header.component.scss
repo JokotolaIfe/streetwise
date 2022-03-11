@@ -1,0 +1,158 @@
+.title {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial !important;
+}
+
+.sub-title{
+    font-family: "Brush Script MT" !important;
+    color: rgb(80, 81, 81);
+    font-size: 17px;
+}
+
+ nav{
+     margin-top: -70px !important;
+ }
+
+.u-nav-item{
+    font-size: 16px !important;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    border-bottom: solid 3px transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    a{
+        color:#fff !important;
+        font-weight: 400 !important;
+    }
+}
+
+@media (min-width: 990px){
+    .for_mobile{
+        display: none !important;
+    }
+    .for_desktop{
+        display: unset !important;
+    }
+}
+
+@media (max-width: 990px){
+    .for_desktop{
+        display: none !important;
+    }
+    .u-header .u-image-1 {
+        width: 64px;
+        height: unset !important;
+        margin: unset !important;
+        /* height: 32px; */
+    }
+    label{
+        // top: -10px;
+    }
+    .col-sm-12{
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+}
+
+.active_link{
+    border-bottom: solid 3px #193eb8;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.card{
+    border-radius: 5px;
+    padding: 8px;
+    height: auto;
+    margin: 15px 0px;
+}
+
+input, select, mdb-select-2{
+    padding: 8px 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    height: 45px;
+    color: rgb(20, 20, 20) !important;
+}
+
+textarea{
+    padding: 8px 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(20, 20, 20) !important;
+}
+
+.row{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.options{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    margin-left: 0px;
+    padding: 8px 16px;
+    display: inline-block !important;
+    overflow-x: hidden !important;
+    cursor: pointer;
+}
+
+.options:hover{
+    background-color: #193eb8;
+    color: white;
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    margin-left: 0px;
+    padding: 8px 16px;
+    display: inline-block !important;
+    overflow: hidden !important;
+    cursor: pointer;
+}
+
+.bg-white{
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    z-index: 99999;
+}   
+
+.shadow_0{
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+label{
+    position: absolute;
+    left: 30px;
+    font-size: 12px;
+    color: #193eb8;
+    padding: 0px 8px;
+    background-color: white;
+}
+
+.mb-5{
+    svg{
+        margin-right: 30px !important;
+        color: #a7a7a7
+    }
+}
+
+.pay_btn{
+    background-color: #193eb8 !important;
+}
+
+form{
+    border: none;
+}

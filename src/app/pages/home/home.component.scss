@@ -1,0 +1,52 @@
+
+
+
+@media (min-width: 580px){
+    .my_bg{
+        background-image: url('../../../assets/images/smart_tracking.PNG');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (max-width: 580px){
+    .my_bg{
+        display: none;
+    }
+
+    .u-section-5{
+        max-height: 1200px !important;
+        margin: unset !important;
+    }
+}
+
+.my_bg_0{
+    background-color: rgb(25, 62, 184, 0.95) !important;
+    border-radius: 4pxpx !important;
+}
+
+
+
+@media (min-width: 765px){
+    .inner_circle{
+        background-color: rgb(0, 0, 0, 0.5);
+        height: 100%;
+        // padd ing: 30px !important;
+        padding-top: 40%;
+        width: 100% !important;
+        line-height: 30px;
+        border-radius: 50% !important;
+        color: white; 
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        display: block;
+    }    
+}
+
+@media (max-width: 765px){
+    .inner_circle{
+        display: none;
+    }    
+}

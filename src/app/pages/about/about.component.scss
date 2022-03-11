@@ -1,0 +1,116 @@
+.u-text-2{
+    color: rgb(81, 81, 81);
+    line-height: 30px;
+}
+
+@media (min-width: 767px){
+    .u-shape-1{
+        padding: unset !important;
+        margin: unset !important;
+        right: 0px !important;
+        top: 20rem;
+    }
+    .u-shape-2 {
+        padding: unset !important;
+        margin: unset !important;
+        left: 10rem !important;
+        z-index: -10;
+        top: 20rem;
+    }
+
+    .u-section-3 .u-list-1 {
+        min-height: 275px;
+        grid-template-columns: repeat(3, calc(33% - 23px)) !important;
+        grid-template-rows: repeat(1, auto);
+        grid-gap: 30px;
+        margin: 30px auto 60px 0;
+      }
+
+      .u-list-1-adjusted{
+        min-height: 275px !important;
+        grid-template-columns: repeat(1, calc(100% - 23px)) !important;
+        grid-template-rows: repeat(1, auto) !important;
+        // grid-gap: 30px;
+        margin: 30px auto 60px 0;
+      }
+
+      .my-cont{
+        height: 610px;
+      }
+}
+
+@media (max-width: 767px){
+    .u-shape-1{
+        display: none !important;
+    }
+    .u-shape-2{
+        display: none !important;
+    }
+    .u-section-3 .u-list-1 {
+        min-height: 275px;
+        grid-template-columns: repeat(1, calc(100% - 23px)) !important;
+        grid-template-rows: repeat(1, auto);
+        grid-gap: 30px;
+        margin: 30px auto 60px 0;
+      }
+}
+
+
+.u-align-center{
+    margin: auto !important;
+}
+
+.u-container-style{
+    margin: auto !important;
+}
+
+.u-text-4{
+    display: block !important;
+    margin-bottom: 0px !important;
+    margin-top: 5px !important;
+}
+.profile_pics_cont{
+    background-color: #fff;
+    border-radius: 4px;
+}
+// .profile_pics_cont{
+//     width: 300px;
+//     height: 300px;
+//     // margin-bottom: -20px;
+//     text-align: center;
+//     border-radius: 5px;
+//     border: solid 10px #ffce00;
+
+    .profile_pics{
+        border-radius: 4px;
+        img{
+            border-radius: 4px;
+        }
+    }
+// }
+
+.col-lg-4, .col-sm-12, .col-md-6 {
+  .u-container-layout{
+    background-color: #193eb8;
+    color: #ffce00;
+    margin: 1rem;
+    padding: 10px !important;
+    border-radius: 4px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+
+    img{
+        width: 100%;
+        height: auto;
+        margin: auto;
+        border-radius: 4px;
+    }
+
+    a{
+        line-height: 0px !important;
+        margin: none !important;
+        padding: none !important;
+        text-transform: capitalize !important;
+        text-decoration: none;
+    }
+  }
+}

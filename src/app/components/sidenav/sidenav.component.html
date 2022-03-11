@@ -1,0 +1,66 @@
+<a (click)="sidenav.toggle()" mdbBtn color="dark" class="p-3 button-collapse"><mdb-icon fas icon="bars"></mdb-icon></a>
+
+    <!-- Sidebar navigation -->
+    <mdb-side-nav #sidenav [sidenavBreakpoint]="1000" class="fixed" [fixed]="true">
+      <div class="container">
+        <div class="text-center">
+          <div class="circle_sm"><span>5</span></div>
+          <div class="title">Express Lands</div>
+        </div>
+    
+    
+        <li>
+          <ul style="height: 72vh !important;" class="collapsible collapsible-accordion">
+            <mdb-accordion [multiple]="false" aria-multiselectable="false">
+      
+              <mdb-accordion-item class="no-collase">
+                <mdb-accordion-item-head class="active" mdbWavesEffect><mdb-icon fas icon="home"></mdb-icon> <span>Dashboard</span>
+                </mdb-accordion-item-head>
+              </mdb-accordion-item>
+    
+              <mdb-accordion-item class="no-collase">
+                <mdb-accordion-item-head class="inactive" mdbWavesEffect><mdb-icon fas icon="hand-holding-usd"></mdb-icon> <span>Menu Item 1</span>
+                </mdb-accordion-item-head>
+              </mdb-accordion-item>
+      
+              <mdb-accordion-item class="no-collase">
+                <mdb-accordion-item-head class="inactive" mdbWavesEffect><mdb-icon fas icon="users"></mdb-icon> <span>Menu Item 2</span>
+                </mdb-accordion-item-head>
+              </mdb-accordion-item>
+    
+              <mdb-accordion-item class="no-collase">
+                <mdb-accordion-item-head class="inactive" mdbWavesEffect><mdb-icon fas icon="coins"></mdb-icon> <span>Menu Item 3</span>
+                </mdb-accordion-item-head>
+              </mdb-accordion-item>
+    
+              <mdb-accordion-item class="no-collase">
+                <mdb-accordion-item-head class="inactive" mdbWavesEffect><mdb-icon fas icon="cog"></mdb-icon> <span>Menu Item 4</span>
+                </mdb-accordion-item-head>
+              </mdb-accordion-item>
+    
+              <mdb-accordion-item class="no-collase">
+                <mdb-accordion-item-head class="inactive" mdbWavesEffect><mdb-icon far icon="list-alt"></mdb-icon> <span>Menu Item 5</span>
+                </mdb-accordion-item-head>
+              </mdb-accordion-item>
+    
+            </mdb-accordion>
+    
+            <div class="float-bottom w-100">
+              <mdb-accordion class="w-80" [multiple]="false" aria-multiselectable="false">
+      
+                <mdb-accordion-item class="w-80 no-collase">
+                  <mdb-accordion-item-head class="inactive" mdbWavesEffect><mdb-icon fas icon="cogs"></mdb-icon> <span>Manage Users</span>
+                  </mdb-accordion-item-head>
+                </mdb-accordion-item>
+      
+              </mdb-accordion>
+            </div>
+          </ul>
+          
+        </li>
+        
+      </div>
+      <div class="sidenav-bg mask-strong"></div>
+    </mdb-side-nav>
+    <!--/. Sidebar navigation -->
+  

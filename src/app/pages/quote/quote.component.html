@@ -1,0 +1,229 @@
+<section class="u-clearfix u-section-4" id="sec-6398">
+    <div class="">
+      <h1 class="u-align-center u-text u-text-palette-5-dark-1 u-text-1">Get A Quote</h1>
+      <p class="u-align-center u-text u-text-2" style="font-weight: 500; color: rgb(91, 91, 91);">
+        We are always interested in any delivery and haulage deals.
+        Thanks for trusting us to arrange your shipment! Fill out the form below to get started.  
+      </p>
+     
+      
+        <div class="cont" style="margin-top: 3rem !important; margin-bottom: 5rem !important">
+            <mdb-tabset #tabs [vertical]="true" [buttonClass]="'md-tabs tabs-3 indigo'" [contentClass]="'card'">
+                <mdb-tab heading="Service Details">
+                    <h3>Service Details</h3>
+                    <div class="row">
+                        <div class="col-12">
+                            <form class="text-center">
+                                <div class="form-row" style="overflow-x: scroll !important;">
+                                    <label class="text-left">Select A Service</label>
+                                    <div class="btn-group">
+                                        <label mdbBtn color="primary" name="Fleet_Management" [(ngModel)]="radioModel" mdbRadio="Fleet_Management" mdbWavesEffect>
+                                          Fleet Management
+                                        </label>
+                                        <label mdbBtn color="primary" name="Mail_Delivery" [(ngModel)]="radioModel" mdbRadio="Mail_Delivery" mdbWavesEffect>
+                                          Mail Delivery
+                                        </label>
+                                        <label mdbBtn color="primary" name="Cargo_Delivery" [(ngModel)]="radioModel" mdbRadio="Cargo_Delivery" mdbWavesEffect>
+                                          Cargo Delivery
+                                        </label>
+                                        <label mdbBtn color="primary" name="Freight_Clearing" [(ngModel)]="radioModel" mdbRadio="Freight_Clearing" mdbWavesEffect>
+                                           Freight Clearing
+                                        </label>
+                                        <label mdbBtn color="primary" name="Logistics_Syndication" [(ngModel)]="radioModel" mdbRadio="Logistics_Syndication" mdbWavesEffect>
+                                            Logistics Syndication
+                                        </label>
+                                    </div>
+                                </div>
+                                <div style="height: 20px;">&nbsp;</div>
+                                <label class="text-left">Address Details</label>
+                                <div class="form-row mb-4">
+                                    <div class="col-lg-6 col-sm-12">
+                                        <small id="defaultPickupAddressBlock" class="text-left form-text text-muted">
+                                            Pickup Location*
+                                        </small>
+                                        <input type="text" name="pickup_address" [(ngModel)]="pickup_address" id="defaultPickupAddress" class="shadow form-control" placeholder="Enter Pickup Address">
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        <small id="defaultDropAddressBlock" class="text-left form-text text-muted">
+                                        Drop Address*
+                                        </small>
+                                        <input type="text" id="defaultRegisterFormLastName" name="drop_address" [(ngModel)]="drop_address" class="shadow form-control" placeholder="Enter Drop Address">
+                                    </div>
+                                </div>
+
+
+                                <label class="text-left">Package Dimensions</label>
+                                <div class="form-row mb-4">
+                                    <div class="col-lg-4 col-sm-12">
+                                        <small id="defaultwidthBlock" class="text-left form-text text-muted">
+                                            Width
+                                        </small>
+                                        <input type="text" id="defaultWidth" name="width" [(ngModel)]="width" class="shadow form-control mb-4" placeholder="20px">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12">
+                                        <small id="defaultwidthBlock" class="text-left form-text text-muted">
+                                            Height
+                                        </small>
+                                        <input type="text" id="defaultWidth" name="height" [(ngModel)]="height" class="shadow form-control mb-4" placeholder="25inches">
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12">
+                                        <small id="defaultwidthBlock" class="text-left form-text text-muted">
+                                            Depth
+                                        </small>
+                                        <input type="text" id="defaultWidth" name="depth" [(ngModel)]="depth" class="shadow form-control mb-4" placeholder="100cm">
+                                    </div>
+                                </div>
+
+                                <div class="form-row mb-4">
+                                    <div class="col-lg-6 col-sm-12">
+                                        <small id="defaultRegisterFormPhoneHelpBlock" class="text-left form-text text-muted">
+                                            Delivery Options*
+                                        </small>
+                                        <select name="payment_for" [(ngModel)]="delivery_option" class="shadow browser-default custom-select">
+                                          <option value="" disabled>Choose option</option>
+                                          <option value="Regular Delivery" selected>Regular Delivery(Within 72 hrs)</option>
+                                          <option value="Same Day Delivery">Same Day Delivery (Same day)</option>
+                                          <option value="Direct Delivery">Direct Delivery (Regualr, door to door)</option>
+                                          <option value="Normal Delivery">Normal Delivery(A week)</option>
+                                        </select>  
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        <small id="defaultDropAddressBlock" class="text-left form-text text-muted">
+                                        Weight
+                                        </small>
+                                        <input type="text" id="defaultRegisterFormLastName" name="weight" [(ngModel)]="weight" class="shadow form-control" placeholder="Enter Weight of Package">
+                                    </div>
+                                </div>
+
+                                <div class="form-row mb-4">
+                                    <div class="col">
+                                        <small id="defaultPickupAddressBlock" class="text-left form-text text-muted">
+                                            Shipment Note / Special Requirement
+                                        </small>
+                                        <textarea type="text" rows="3" name="shipment_note" [(ngModel)]="shipment_note" id="defaultPickupAddress" class="shadow form-control" placeholder="Enter Special Note or requirement"></textarea>
+                                    </div>
+                                </div>
+                        
+                                <small id="defaultRegisterFormPhoneHelpBlock" class="text-center form-text text-muted">
+                                    Add Insurance
+                                </small>
+                                <div class="switch">
+                                    <label>
+                                      No
+                                      <input [(ngModel)]="add_insurance" type="checkbox" checked>
+                                      <span class="lever"></span> Yes
+                                    </label>
+                                  </div>
+                        
+                                <div style="height: 20px;">&nbsp;</div>
+                        
+                                <button
+                                size="sm"
+                                mdbBtn (click)="nextTab(2)"
+                                class="my-4 pay_btn_0 shadow" 
+                                type="submit">
+                                    Next
+                                </button>
+                        
+                            </form>
+                        </div>
+                    </div>
+                </mdb-tab>
+                <mdb-tab heading="Personal Details">
+                    <h3>Personal Details</h3>
+                    <div class="row">
+                        <div class="col-12">
+                            <form class="text-center">
+ 
+                                <div class="form-row">
+                                    <div class="col">
+                                        <small id="defaultRegisterFormPhoneHelpBlock" class="text-left form-text text-muted">
+                                            First Name*
+                                        </small>
+                                        <input type="text" name="first_name" [(ngModel)]="first_name" id="defaultRegisterFormFirstName" class="shadow form-control" placeholder="Enter First name">
+                                    </div>
+                                    <div class="col">
+                                        <small id="defaultRegisterFormPhoneHelpBlock" class="text-left form-text text-muted">
+                                        Last Name*
+                                        </small>
+                                        <input type="text" id="defaultRegisterFormLastName" name="last_name" [(ngModel)]="last_name" class="shadow form-control" placeholder="Enter Last name">
+                                    </div>
+                                </div>
+                                <div style="height: 20px;">&nbsp;</div>
+                        
+                                <div class="form-row mb-4">
+                                    <div class="col">
+                                        <small id="defaultRegisterFormPhoneHelpBlock" class="text-left form-text text-muted">
+                                            Email Address*
+                                        </small>
+                                        <input type="email" id="defaultRegisterFormEmail" name="email" [(ngModel)]="email" class="shadow form-control mb-4" placeholder="Enter your e-mail address">
+                                    </div>
+                                    <div class="col">
+                                        <small id="defaultRegisterFormPhoneHelpBlock" class="text-left form-text text-muted">
+                                            Phone Number*
+                                        </small>
+                                        <input type="text" id="defaultRegisterFormPhone" name="phone" [(ngModel)]="phone" class="shadow form-control mb-4" placeholder="Enter Phone Here">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row mb-4">
+                                    <div class="col">
+                                        <small id="defaultRegisterFormPhoneHelpBlock" class="text-left form-text text-muted">
+                                         Address*
+                                        </small>
+                                        <input type="text" id="defaultRegisterFormEmail" name="address" [(ngModel)]="address" class="shadow form-control mb-4" placeholder="Address">
+                                    </div>
+                                </div>
+
+                                <div class="form-row mb-4">
+                                    <div class="col">
+                                        <small id="defaultRegisterFormPhoneHelpBlock" class="text-left form-text text-muted">
+                                            P.O Box*
+                                        </small>
+                                        <input type="text" id="defaultRegisterFormEmail" name="pmb" [(ngModel)]="pmb" class="shadow form-control mb-4" placeholder="Enter P.O Box">
+                                    </div>
+                                    <div class="col">
+                                        <small id="defaultRegisterFormPhoneHelpBlock" class="text-left form-text text-muted">
+                                            City*
+                                        </small>
+                                        <input type="text" id="defaultRegisterFormPhone" name="city" [(ngModel)]="city" class="shadow form-control mb-4" placeholder="Enter City Here">
+                                    </div>
+                                    <div class="col">
+                                        <small id="defaultRegisterFormPhoneHelpBlock" class="text-left form-text text-muted">
+                                            State*
+                                        </small>
+                                        <input type="text" id="defaultRegisterFormPhone" name="state" [(ngModel)]="state" class="shadow form-control mb-4" placeholder="Enter State Here">
+                                    </div>
+                                </div>
+
+                                <button
+                                size="sm"
+                                mdbBtn (click)="nextTab(3)"
+                                class="my-4 pay_btn_0 shadow" 
+                                type="submit">
+                                    Next
+                                </button>
+                        
+                            </form>
+                        </div>
+                    </div>
+                </mdb-tab>
+                <mdb-tab heading="Finish & Submit">
+                    <div class="row">
+                        <div class="col-12">
+                        <br>
+                        <button
+                        block="true"
+                        size="sm"
+                        mdbBtn (click)="submit()"
+                        class="my-4 pay_btn shadow" 
+                        type="submit">
+                            Submit Form and Get Quote
+                        </button>
+                        </div>
+                    </div>
+                </mdb-tab>
+            </mdb-tabset>
+        </div>
+    </div>
+  </section>

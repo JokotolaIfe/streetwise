@@ -1,0 +1,17 @@
+.container{
+    max-width: 800px;
+    margin: auto;
+
+    .pay_btn{
+        color: #ffffff !important;
+        background-color: #193eb8 !important;
+        text-transform: capitalize !important;
+        font-size: 18px !important;
+    }
+
+    input, select{
+        border: none !important;
+        height: 50px;
+        font-size: 20px;
+    }
+}
